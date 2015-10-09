@@ -55,7 +55,7 @@ namespace swgPSH
                 }
                 else
                 {
-                    Console.WriteLine("Shader source or compiled shader does not exist.")
+                    Console.WriteLine("Shader source or compiled shader does not exist.");
                 }
             }
             else
