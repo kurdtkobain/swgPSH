@@ -7,8 +7,6 @@ namespace swgPSHDump
     {
         static void Main(string[] args)
         {
-            if (BitConverter.IsLittleEndian)
-            {
                 if (File.Exists(args[0]))
                 {
                     using (MemoryStream ms = new MemoryStream())
@@ -35,10 +33,6 @@ namespace swgPSHDump
                         }
                     }
                 }
-            }
-            else
-            {
-                Console.WriteLine("Program written for little-endian");
             }
         }
     }
